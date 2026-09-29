@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geothermal Network - Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+<div class="login-page">
+    <div class="login-hero">
+        <div class="brand-mark">🌱</div>
+        <h1>Clean Energy.<br>Smarter Communities.</h1>
+        <p>Manage geothermal boreholes, heat pumps, thermal energy, billing and financial transactions from one platform.</p>
+        <div class="hero-points">
+            <span>🌱 Clean Energy</span>
+            <span>♨️ Heat Management</span>
+            <span>📊 Smart Monitoring</span>
+        </div>
+    </div>
+
+    <div class="login-card">
+        <div class="lock-icon">🔐</div>
+        <h2>Welcome Back</h2>
+        <p class="muted">Sign in to your network account</p>
+
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <div class="input-wrap">
+                <span>👤</span>
+                <input id="username" type="text" placeholder="Enter username" required autocomplete="username">
+            </div>
+
+            <label for="password">Password</label>
+            <div class="input-wrap">
+                <span>🔑</span>
+                <input id="password" type="password" placeholder="Enter password" required autocomplete="current-password">
+            </div>
+
+            <button class="login-btn" type="submit">Login to Dashboard</button>
+            <div id="loginMessage" class="login-message"></div>
+        </form>
+
+        <div class="login-footer">🌱 Geothermal Network Management System</div>
+    </div>
+</div>
+<script src="/js/login.js"></script>
+</body>
+</html>

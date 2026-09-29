@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geothermal Management</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+<div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div>
+                <span class="eyebrow">NETWORK MANAGEMENT</span>
+                <h1 id="pageTitle">Management</h1>
+                <p id="pageSubtitle">Manage geothermal network data.</p>
+            </div>
+            <div class="user-box">
+                <div class="avatar">👤</div>
+                <div>
+                    <strong id="topUsername">User</strong>
+                    <span id="topRole">Role</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="toolbar">
+            <div class="search-wrap">
+                <span>🔎</span>
+                <input id="searchInput" type="search" placeholder="Search records...">
+            </div>
+            <button id="addBtn" class="btn btn-primary">＋ Add</button>
+        </section>
+
+        <div id="message" class="message hidden"></div>
+
+        <section class="table-card">
+            <div class="table-scroll">
+                <table>
+                    <thead id="tableHead"></thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+            <div id="emptyState" class="empty-state hidden">
+                <div>📭</div>
+                <h3>No records found</h3>
+                <p>There is no data for this module yet.</p>
+            </div>
+        </section>
+    </main>
+</div>
+
+<div id="modal" class="modal hidden">
+    <div class="modal-card">
+        <div class="modal-header">
+            <div>
+                <span class="eyebrow">DATA ENTRY</span>
+                <h2 id="modalTitle">Add Record</h2>
+            </div>
+            <button id="closeModal" class="icon-btn" type="button">✕</button>
+        </div>
+        <p id="modalSubtitle" class="muted">Enter the required information.</p>
+        <form id="recordForm">
+            <div id="formFields" class="form-grid"></div>
+            <div class="modal-actions">
+                <button type="button" id="cancelBtn" class="btn btn-secondary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Save Record</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/js/api.js"></script>
+<script src="/js/management.js"></script>
+</body>
+</html>

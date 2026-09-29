@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geothermal Network Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+<div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Community Geothermal District Heat Pump & Shared Borehole Loop</p>
+            </div>
+            <div class="user-box">
+                <div class="avatar">👤</div>
+                <div>
+                    <strong id="topUsername">User</strong>
+                    <span id="topRole">Role</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="welcome-card">
+            <div>
+                <span class="eyebrow">GEOTHERMAL NETWORK</span>
+                <h2>Welcome to Geothermal Network</h2>
+                <p>Monitor boreholes, heat pumps, thermal energy, customers, invoices and payments from one place.</p>
+            </div>
+            <div class="welcome-icon">🌍</div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card"><div class="stat-icon">🕳️</div><div><span>Boreholes</span><strong id="boreholeCount">0</strong></div></div>
+            <div class="stat-card"><div class="stat-icon">♨️</div><div><span>Heat Pumps</span><strong id="heatpumpCount">0</strong></div></div>
+            <div class="stat-card"><div class="stat-icon">🏠</div><div><span>Customers</span><strong id="customerCount">0</strong></div></div>
+            <div class="stat-card"><div class="stat-icon">🧾</div><div><span>Invoices</span><strong id="invoiceCount">0</strong></div></div>
+        </section>
+
+        <section class="quick-section">
+            <div class="section-heading">
+                <div><span class="eyebrow">QUICK ACCESS</span><h2>Management Modules</h2></div>
+            </div>
+            <div class="quick-grid" id="quickGrid"></div>
+        </section>
+    </main>
+</div>
+<script src="/js/api.js"></script>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

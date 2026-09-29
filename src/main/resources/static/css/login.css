@@ -1,0 +1,31 @@
+:root{
+    --green:#20a39a;
+    --green-dark:#137c76;
+    --navy:#102d47;
+    --text:#19324a;
+    --muted:#6e8094;
+    --bg:#f4f8fb;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.login-page{min-height:100vh;display:grid;grid-template-columns:1.15fr .85fr}
+.login-hero{padding:90px 9vw;background:linear-gradient(135deg,#0e304a,#155f6c);color:#fff;display:flex;flex-direction:column;justify-content:center}
+.brand-mark{font-size:52px;margin-bottom:20px}
+.login-hero h1{font-size:52px;line-height:1.08;margin:0 0 20px}
+.login-hero p{font-size:19px;line-height:1.7;max-width:620px;color:#dcecf2}
+.hero-points{display:flex;flex-direction:column;gap:13px;margin-top:28px;font-size:17px}
+.login-card{background:#fff;max-width:500px;width:90%;margin:auto;padding:50px;border-radius:24px;box-shadow:0 20px 60px #163b4a20}
+.lock-icon{width:68px;height:68px;border-radius:18px;background:#e5f6f4;display:grid;place-items:center;font-size:32px;margin-bottom:20px}
+.login-card h2{font-size:34px;margin:0 0 7px}
+.muted{color:var(--muted);margin:0 0 30px}
+.login-card label{display:block;font-weight:700;margin:20px 0 8px}
+.input-wrap{display:flex;align-items:center;border:1px solid #d8e2ea;border-radius:11px;padding:0 14px;background:#fff}
+.input-wrap:focus-within{border-color:var(--green);box-shadow:0 0 0 3px #20a39a18}
+.input-wrap span{font-size:18px}
+.input-wrap input{width:100%;border:0;outline:0;padding:16px 12px;font-size:16px}
+.login-btn{width:100%;border:0;border-radius:11px;background:var(--green);color:#fff;font-size:16px;font-weight:800;padding:16px;margin-top:25px;cursor:pointer}
+.login-btn:hover{background:var(--green-dark)}
+.login-message{min-height:24px;margin-top:14px;text-align:center;font-weight:600}
+.login-message.error{color:#c0392b}.login-message.info{color:#24719b}
+.login-footer{border-top:1px solid #e7edf2;margin-top:32px;padding-top:20px;text-align:center;color:#8092a4;font-size:13px}
+@media(max-width:850px){.login-page{grid-template-columns:1fr}.login-hero{padding:50px 8vw}.login-hero h1{font-size:40px}.login-card{margin:40px auto}.hero-points{display:none}}

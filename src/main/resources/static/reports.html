@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geothermal Reports</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+<div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main-content">
+        <header class="topbar">
+            <div>
+                <span class="eyebrow">FINANCE & ANALYTICS</span>
+                <h1>Reports</h1>
+                <p>Financial and geothermal network summaries.</p>
+            </div>
+            <div class="user-box">
+                <div class="avatar">👤</div>
+                <div><strong id="topUsername">User</strong><span id="topRole">Role</span></div>
+            </div>
+        </header>
+
+        <div id="reportMessage" class="message hidden"></div>
+
+        <section class="report-grid">
+            <div class="report-card">
+                <div class="report-icon">🏦</div>
+                <h3>Balance Sheet</h3>
+                <div class="metric-row"><span>Total Assets</span><strong id="assets">₹0.00</strong></div>
+                <div class="metric-row"><span>Total Liabilities</span><strong id="liabilities">₹0.00</strong></div>
+                <div class="metric-row"><span>Cash / Bank</span><strong id="cash">₹0.00</strong></div>
+            </div>
+
+            <div class="report-card">
+                <div class="report-icon">📈</div>
+                <h3>Profit & Loss</h3>
+                <div class="metric-row"><span>Total Income</span><strong id="income">₹0.00</strong></div>
+                <div class="metric-row"><span>Total Expenses</span><strong id="expenses">₹0.00</strong></div>
+                <div class="metric-row highlight"><span>Net Profit</span><strong id="profit">₹0.00</strong></div>
+            </div>
+
+            <div class="report-card">
+                <div class="report-icon">🎯</div>
+                <h3>Budget</h3>
+                <div class="metric-row"><span>Planned Amount</span><strong id="planned">₹0.00</strong></div>
+                <div class="metric-row"><span>Actual Amount</span><strong id="actual">₹0.00</strong></div>
+                <div class="metric-row highlight"><span>Remaining</span><strong id="remaining">₹0.00</strong></div>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="/js/api.js"></script>
+<script src="/js/dashboard.js"></script>
+<script src="/js/reports.js"></script>
+</body>
+</html>
